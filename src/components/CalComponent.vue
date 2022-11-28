@@ -1,21 +1,17 @@
-<script lang="ts">
+<script setup lang="ts">
 import { reactive, computed } from "vue";
-export default {
-  setup() {
-    const state = reactive({
-      num1: "0",
-      num2: "0",
-      result: 0,
-    });
-    const result = computed(function () {
-      return parseInt(state.num1) + parseInt(state.num2);
-    });
-    function add() {
-      state.result = parseInt(state.num1) + parseInt(state.num2);
-    }
-    return { state, add, result };
-  },
-};
+
+const state = reactive({
+  num1: "0",
+  num2: "0",
+  result: 0,
+});
+const result = computed(function () {
+  return parseInt(state.num1) + parseInt(state.num2);
+});
+function add() {
+  state.result = parseInt(state.num1) + parseInt(state.num2);
+}
 </script>
 
 <template>
