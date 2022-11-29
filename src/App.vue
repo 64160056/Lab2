@@ -6,12 +6,15 @@ import HelloWorldExample from "./components/HelloWorldExample.vue";
 import HandingUserinput from "./components/HandingUserinput.vue";
 import AttributeBinding from "./components/AttributeBinding.vue";
 import ConditionAndLoops from "./components/ConditionAndLoops.vue";
+import FromBindings from "./components/FromBindings.vue";
 </script>
 
 <template>
   <div>
+    <FromBindings />
+    <br /><br />
     <ConditionAndLoops />
-    <br />
+    <br /><br />
     <AttributeBinding />
     <HandingUserinput />
     <CalComponent />
