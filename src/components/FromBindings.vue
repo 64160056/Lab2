@@ -4,6 +4,7 @@ const text = ref("Edit Me");
 const checked = ref(true);
 const checkedNames = ref(["Jack"]);
 const picked = ref("One");
+const selected = ref("A");
 </script>
 
 <template>
@@ -32,4 +33,13 @@ const picked = ref("One");
   <label for="two">Two</label>
   <br />
   <span>Picked: {{ picked }}</span>
+
+  <h2>Select</h2>
+  <select v-model="selected">
+    <option disabled value="">Please select one</option>
+    <option>A</option>
+    <option>B</option>
+    <option>C</option>
+  </select>
+  <span> Selected: {{ selected }}</span>
 </template>
