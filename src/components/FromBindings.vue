@@ -3,6 +3,7 @@ import { ref } from "vue";
 const text = ref("Edit Me");
 const checked = ref(true);
 const checkedNames = ref(["Jack"]);
+const picked = ref("One");
 </script>
 
 <template>
@@ -22,4 +23,13 @@ const checkedNames = ref(["Jack"]);
   <label for="mike">Mike</label>
   <p>Checked names:</p>
   <pre>{{ checkedNames }}</pre>
+
+  <h2>Radio</h2>
+  <input type="radio" id="one" value="One" v-model="picked" />
+  <label for="one">One</label>
+  <br />
+  <input type="radio" id="two" value="Two" v-model="picked" />
+  <label for="two">Two</label>
+  <br />
+  <span>Picked: {{ picked }}</span>
 </template>
