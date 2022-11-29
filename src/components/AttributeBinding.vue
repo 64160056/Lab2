@@ -1,10 +1,11 @@
-<script setup lang="vs">
-import { ref } from 'vue'
+<script setup lang="ts">
+import { ref } from "vue";
+const message = ref("Helllo World!");
 </script>
 
 <template>
   <p>
-    <span title="message">
+    <span v-bind:title="message">
       Hover your mouse over me for a few seconds to see my dynamically bound
       title!
     </span>
@@ -17,4 +18,8 @@ import { ref } from 'vue'
   </p>
 </template>
 
-<style scoped></style>
+<style scoped>
+.red {
+  color: red;
+}
+</style>
