@@ -5,6 +5,7 @@ const checked = ref(true);
 const checkedNames = ref(["Jack"]);
 const picked = ref("One");
 const selected = ref("A");
+const multiSelected = ref(["A"]);
 </script>
 
 <template>
@@ -42,4 +43,12 @@ const selected = ref("A");
     <option>C</option>
   </select>
   <span> Selected: {{ selected }}</span>
+
+  <h2>Multi Select</h2>
+  <select v-model="multiSelected" multiple style="width: 100px">
+    <option>A</option>
+    <option>B</option>
+    <option>C</option>
+  </select>
+  <span> Selected: {{ multiSelected }}</span>
 </template>
