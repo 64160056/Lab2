@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import { ref } from "vue";
+import type TodoItemVue from "./TodoItem.vue";
+import TodoItem from "./TodoItem.vue";
 const groceryList = ref([
   { id: 0, text: "Vegetables" },
   { id: 1, text: "Cheese" },
@@ -8,7 +10,7 @@ const groceryList = ref([
 </script>
 
 <template>
-  <div>
+  <ol>
     <li v-for="item of groceryList" :key="item.id">{{ item.text }}</li>
-  </div>
+  </ol>
 </template>
