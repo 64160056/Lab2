@@ -7,10 +7,13 @@ import HandingUserinput from "./components/HandingUserinput.vue";
 import AttributeBinding from "./components/AttributeBinding.vue";
 import ConditionAndLoops from "./components/ConditionAndLoops.vue";
 import FromBindings from "./components/FromBindings.vue";
+import SimpleComponent from "./components/SimpleComponent.vue";
 </script>
 
 <template>
   <div>
+    <SimpleComponent />
+    <br /><br />
     <FromBindings />
     <br /><br />
     <ConditionAndLoops />
